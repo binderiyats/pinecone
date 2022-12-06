@@ -58,3 +58,16 @@ console.log(too(10,5))
       }
 
       console.log(givenArray([10, 50]));
+//#8
+      function upperCase(string) {
+        string = string.toUpperCase();
+        return string;
+      }
+      console.log(upperCase("Hello world"));
+
+//#9
+      function lowerCase(string) {
+        string = string.toLowerCase();
+        return string;
+      }
+      console.log(lowerCase("Hello world"));

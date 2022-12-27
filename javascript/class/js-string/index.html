@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const str1 = "Hello,";
+      //   const str2 = "My name is ";
+      //   const str3 = "Binderiya";
+      //   const message = str1 + "everyone," + str2 + str3;
+      //   //   console.log(message);
+      //   const message1 = `${str1}\f everyone ${str2} ${str3}`;
+      //   console.log(message1);
+      //   let iof = "This is a string";
+      //   str4.substr(iof.indexOf("is"));
+      //   const result = str4;
+
+      //   const degrees = 45;
+      //   let rad = degrees * (Math.pi / 180);
+      //   console.log(rad);
+      //   let a = 5,
+      //     b = 9;
+      //   const diff = math.abs(a - b);
+      let too = 5;
+      let result = Math.random(too) * 10;
+
+      console.log(result.toFixed(0));
+
+      // general triangle
+      const a = 3,
+        b = 4;
+      const c = Math.sqrt(a ** 2 + b ** 2);
+      console.log(c);
+
+      //   random number
+      // let ner = window.prompt("message");
+
+      //   register number
+
+      //   const register = window.prompt("Registeriin dugaaraa oruulna uu");
+      //   const useg = register.substr(0, 2);
+      //   if (Number(useg) > 0) {
+      //     console.log("buruu");
+      //   } else {
+      //     console.log("zuv");
+      //   }
+
+      let register = window.prompt("regsiteree bichne uu");
+      let alphs = register.substring(0, 2);
+      let numbers = register.substring(2, 10);
+      register.length === 10 && !Number(alphs)
+        ? console.log("Зөв оруулсан байна")
+        : console.log("Буруу оруулсан байна");
+    </script>
+  </body>
+</html>

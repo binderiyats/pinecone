@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-color: gray;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+}
+.sidebar{
+    width: 25%;
+    background-color: lightslategray;
+    padding: 50px;
+    margin-right: 10px;
+}
+.img img{
+    border-radius: 15px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    background-color: lightslategray;
+    width: 75%;
+}
+.mainTop{
+    display: flex;
+}
+.mainleft{
+    width: 25%;
+}
+article{
+    display: flex;
+}

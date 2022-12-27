@@ -1,0 +1,12 @@
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+label{
+    text-align: right;
+        width: 40%;
+}
+input{
+    width: 40%;
+}
+

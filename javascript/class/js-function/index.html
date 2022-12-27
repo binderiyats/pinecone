@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pyramid(rowLength) {
+        let result = "";
+        for (let i = 1; i <= rowLength; i++) {
+          for (let j = 0; j < rowLength - i; j++) {
+            result += " ";
+          }
+          for (let j = 0; j < i; j++) {
+            result += "* ";
+          }
+          result += "\n";
+        }
+        console.log(result);
+      }
+      pyramid(5);
+      //AB00230502
+      function gender(register) {
+        if (register.charAt[8] % 2 === 0) {
+          return "emegtei";
+        } else {
+          return "eregtei";
+        }
+      }
+
+      //   let input = window.prompt("Write your register number");
+
+      //   console.log(gender(input));
+      //   gender([U], H, [98], [23], [05], [0], 2);
+
+      //simple-function-assignment
+      //   function fullName(firstName, lastName) {
+      //     return firstName + lastName;
+      //   }
+      //   console.log(fullName("Binderiya ", "Tsogt "));
+      //simple-function-assignment-area
+      //   function area(a, b) {
+      //     return a * b;
+      //   }
+      //   console.log(area(12, 2));
+
+      //simple-function-assignment-perimeter
+      //   function perimeter(a, b) {
+      //     return (a + b) * 2;
+      //   }
+      //   console.log(perimeter(2, 2));
+      //   function numbers1(a, b) {
+      //     let array = [];
+      //     if (a < b) {
+      //       for (let i = a; i <= b; i++) {
+      //         if (i % 2 === 0) {
+      //           array.push(i);
+      //         }
+      //       }
+      //     } else {
+      //       for (let i = a; i >= b; i--) {
+      //         if (i % 2 === 0) {
+      //           array.push(i);
+      //         }
+      //       }
+      //     }
+      //     return array;
+      //   }
+
+      //   console.log(numbers1(80, 70));
+      //   function numbers2(c, d) {
+      //     let array = [];
+      //     if (c < d) {
+      //       for (let i = c; i <= d; i++) {
+      //         if (i % 2 !== 0) {
+      //           array.push(i);
+      //         }
+      //       }
+      //     } else {
+      //       for (let i = c; i >= d; i--) {
+      //         if (i % 2 !== 0) {
+      //           array.push(i);
+      //         }
+      //       }
+      //     }
+      //     return array;
+      //   }
+      //   console.log(numbers2(10, 20));
+      //   function too(a, b) {
+      //     if (a > b) {
+      //       return a;
+      //     } else {
+      //       return b;
+      //     }
+      //   }
+      //   console.log(too(10, 15));
+      //   #2
+      //     function findNumberInArray(number, array) {
+      //       for (let i = 0; i < array.length; i++) {
+      //         if (array[i] === number) {
+      //           return "This is number:" + number;
+      //         }
+      //       }
+      //       return -1;
+      //     }
+      //     console.log(findNumberInArray(10, [12, 10, 30]));
+      //   //#3
+      //   function findStringInNumber(string1, string2) {
+      //     for (let i = 0; i < string2.length; i++) {
+      //       if (string2[i] === string1) {
+      //         return "This is number:" + string1;
+      //       }
+      //     }
+      //     return -1;
+      //   }
+      //   console.log(findStringInNumber("h", "hello"));
+      //#4
+      //   function randomNumber(min, max) {
+      //     return Math.floor(Math.random() * (max - min + 1) + min);
+      //   }
+      //   console.log(randomNumber(5, 15));
+      //   //#5
+
+      //   function givenArray(array) {
+      //     let sum = 0;
+      //     for (let i = 0; i < array.length; i++) {
+      //       sum += array[i];
+      //     }
+      //     return sum / array.length;
+      //   }
+
+      //   console.log(givenArray([10, 50]));
+
+      //6
+      //8
+      function upperCase(string) {
+        string = string.toUpperCase();
+        return string;
+      }
+      console.log(upperCase("Hello world"));
+
+      let number = 4;
+      let k = "";
+      for (let i = 0; i < number; i++) {
+        k += i;
+        k += " ";
+      }
+      console.log(k);
+
+      r = 5;
+      k = "";
+      for (let i = 1; i <= 5; i++) {
+        // hooson zaig hewleh dawtalt
+        for (let j = 1; j <= r - i; j++) {
+          k += " ";
+        }
+        // ** hewleh
+        for (let x = 1; x <= i * 2 - 1; x++) {
+          k += "*";
+        }
+        k += "\n";
+      }
+      console.log(k);
+
+      row = 5;
+      k = "";
+      for (let i = 1; i <= row; i++) {
+        for (let j = 1; j <= row; j++) {
+          if (i == 1 || i == 5) k += "*";
+          else {
+            if (j == 1 || j == 5) k += "*";
+            else k += " ";
+          }
+        }
+        k += "\n";
+      }
+      console.log(k);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --heigth: 500vh;
+      }
+      /* html{
+        --width:100px;
+      } */
+      body {
+        margin-bottom: 0;
+        background: linear-gradient(#2980b9, #6bd5fa, #ffffff);
+      }
+      main {
+        min-height: var(--heigth);
+        position: relative;
+      }
+      .grass {
+        height: 150px;
+        background-image: url(./img/image_2.jpeg);
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+      .ladder {
+        height: calc(var(--heigth) - 150px);
+        background-image: url(https://lh3.googleusercontent.com/vI4Qa08i6jICxqm5-Fbhr7xdwbikcwwwwoeyR-4Y7qwa3xELAPYxv7OitIECxM_OBo1Sghb4oA00cts1587qZvIsh0MbXI5aNzA=s400);
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: contain;
+      }
+      .progress {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #fff;
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 72px;
+        text-align: right;
+      }
+      .progress-bar {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 0;
+        height: 10px;
+      }
+      .run-box {
+        position: absolute;
+        bottom: 90px;
+        height: 300px;
+        width: 50%;
+        left: 0;
+        overflow: hidden;
+      }
+      .run-box img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transition: 0.1s all;
+      }
+      .run-box.active img {
+        right: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="progress-bar">
+        <div class="progress-bar-inner"></div>
+      </div>
+      <div class="ladder"></div>
+      <div class="grass"></div>
+      <div class="progress"></div>
+      <div class="run-box">
+        <img
+          src="https://www.tynker.com/minecraft/mobs/json/previews/silverfish.png"
+          alt=""
+        />
+      </div>
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>

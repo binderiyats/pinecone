@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let names = [
+        "Binderiya",
+        "Indra",
+        "Ganbold",
+        "Namuunbaigali",
+        "Tengisbold",
+        "Baljinnyam",
+        "Anand",
+        "Narantsatsral",
+        "Odbayr",
+        "SedErdene",
+        "Javkhlant",
+        "Dalaikhuu",
+        "Ermuun",
+        "Temuulen",
+        "Usukhbayar",
+        "Sukhbat",
+        "Ermuun",
+        "Dulguun",
+        "Aimergen",
+        "Temuulen",
+      ];
+      let longIndex = 0;
+      for (let i = 0; i < names.length; i++) {
+        if (names[longIndex].length < names[i].length) {
+          longIndex = i;
+        }
+      }
+      console.log(`${names[longIndex]} ni hamgiin urt nertei hun.`);
+
+      let sum = 0;
+      for (let i = 0; i < names.length; i++) {
+        if (names[i][0] == "T") sum++;
+      }
+      console.log();
+
+      const results = [60, 70, 80, 90, 88, 78, 91];
+      let resultSum = 0;
+      for (let i = 0; i < results.length; i++) {
+        resultSum += results[i];
+      }
+      const avg = resultSum / results.length;
+      console.log(Math.floor(avg));
+
+      //array numbers niilber
+      //   let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+      //   let niilber = 0;
+      //   for (let i = 0; i < arrayOfNumbers.length; i++) {
+      //     niilber += arrayOfNumbers[i];
+      //   }
+      //   console.log(niilber);
+      //hamgiin ih too
+      //   let ihOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+      //   let ih = ihOfNumbers[0];
+      //   for (let i = 0; i < ihOfNumbers.length; i++) {
+      //     if (ih < ihOfNumbers[i]) {
+      //       ih = ihOfNumbers[i];
+      //     }
+      //   }
+      //   console.log(ih);
+      //hamgiin baga too
+      let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+      //   let baga = arrayOfNumbers[0];
+      //   for (let i = 0; i < arrayOfNumbers.length; i++) {
+      //     if (baga > arrayOfNumbers[i]) {
+      //       baga = arrayOfNumbers[i];
+      //     }
+      //   }
+      //   console.log(baga);
+
+      //suuliin toon dr duriin neg too nem
+      //   let duriinToo = Number(window.prompt("neg too bichne uu"));
+      //   arrayOfNumbers[arrayOfNumbers.length] = duriinToo;
+      //   console.log(arrayOfNumbers);
+      //
+
+      //ehend too nem
+      //   let ehniiToo = Number(window.prompt("ehend too nemeh toog olno uu"));
+      //   for (let i = arrayOfNumbers.length - 1; i >= 0; i--) {
+      // arrayOfNumbers[arrayOfNumbers.length] = ehniiToo;
+      //     arrayOfNumbers[i + 1] = arrayOfNumbers[i];
+      //   }
+
+      //   console.log(arrayOfNumbers);
+      //   for (let i = 0; i <= arrayOfNumbers.length; i++) {
+      //     if (arrayOfNumbers.length == i) arrayOfNumbers[i] = 1;
+      //   }
+      //   for (let i = 0; i <= arrayOfNumbers.length; i++) {
+      // if (arrayOfNumbers.length == i) {
+      //   arrayOfNumbers[i] = 1;
+      // }
+      //     console.log("aa");
+      //   }
+      //   console.log(arrayOfNumbers);
+
+      //   const before = new date();
+      //   const now = new date();
+
+      //Simple Array-1
+      let itCompanies = [
+        "Fb",
+        "Google",
+        "Microsoft",
+        "Apple",
+        "IBM",
+        "Oracle",
+        "Amazon",
+      ];
+      console.log(itCompanies);
+      console.log(itCompanies.length);
+      console.log(itCompanies[0]);
+      lastCompany = 0;
+      for (i = 0; i < itCompanies; i++) {}
+      console.log(itCompanies.length - 1);
+      console.log(itCompanies[3]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.onOff{
+    width: 100px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 50px;
+    position: relative;
+    display: flex;
+    background: gray;
+}
+.circle{
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px gray;
+    
+    left: 5px;
+    
+
+
+}
+
+.circle:active{
+    left: 60px;
+    
+    transition: 0.5s all;
+
+}
+.onOff:active{
+    background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+/* input{
+    width: 20px;
+    padding: 0 10px;
+    border-radius: 15px;
+    height: 30px;
+    border: 1px solid #ddd;
+    outline: 0;
+    transition: 0.5s all;
+
+
+}
+
+input:focus{
+    border-radius: red;
+    width: 200px;
+} */
+
+
+
+
+
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition: 0.5s border-radius, 2s background-color;
+}
+.box:hover{
+    border-radius: 50%;
+    background-color: greenyellow;
+} */

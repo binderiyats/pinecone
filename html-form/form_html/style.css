@@ -1,0 +1,20 @@
+h5{
+    margin: 0;
+}
+.form{
+    margin: 0;
+    display: block;
+    border: dashed rgb(153, 19, 19);
+    padding: 10px;
+}
+.title{
+    background-color: pink;
+    text-align: center;
+}
+fieldset{
+    text-align: center;
+    margin: 10px;
+}
+form{
+    text-align: center;
+}

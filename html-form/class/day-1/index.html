@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- <ul style="text-decoration: none; list-style: none;">
+        <li><input type="text"></li>
+        <li><input type="number">Number</li>
+        <li><input type="date">Date</li>
+        <li><input type="password">password</li>
+        <li><input type="color">color</li>
+        <li><input type="radio">Radio</li>
+        <li><input type="checkbox">checkbox</li>
+        <li><input type="hidden">hidden</li>
+        <li><input type="range">range</li>
+    </ul> -->
+
+    <form action="./index.html" method="get">
+        <h5>Your sex</h5>
+        <label>
+            <input type="radio" value="male" name="sex">Male
+        </label>
+        <label>
+            <input type="radio" value="female" name="sex">Female
+        </label>
+        <label>
+            <input type="radio" value="other" name="sex">Other
+        </label>
+        <h5>Your hobby</h5>
+        <label>
+            <input type="checkbox" value="male" name="hobby">Sport
+        </label>
+        <label>
+            <input type="checkbox" value="female" name="hobby">Dance
+        </label>
+        <label>
+            <input type="checkbox" value="other" name="hobby">Reading
+        </label>
+        <br>
+        <label>
+            Your name
+            <br>
+            <input name="username" type="text" value="" placeholder="Your name"  minlength="3">
+        </label>
+        <br>
+        <textarea name="" id="" cols="10" rows="6" style="resize: none;"></textarea>
+        <br>
+        <select name="" id="">
+            <option value="ulaanbaatar">ulaanbaatar</option>
+            <option value="uvs">uvs</option>
+            <option value="dornod">dornod</option>
+        </select>
+        <button type="button">Submit</button>
+    </form>
+
+    
+</body>
+</html>

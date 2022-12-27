@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const input = window.prompt('hi');
+      //   function isPalimdrom(data) {
+      //     data === data.split("").reverse().join("");
+      //   }
+      //   console.log(isPalimdrom(input));
+
+      //oocher #1
+      const queueLine = [
+        "Бат",
+        "Дорж",
+        "Пунцаг",
+        "Готов",
+        "Баяраа",
+        "Болд",
+        "Навчаа",
+        "Гончигсумлай",
+        "Цэцгээ",
+        "Нэргүй",
+        "Бальбийгомбо",
+        "Баатар",
+        "Сүхээ",
+      ];
+      function isQueue(egch1, egch2) {
+        queueLine.splice(8, 0, egch1, egch2);
+      }
+      isQueue("tsetsgee", "burmaa");
+      console.log(queueLine);
+      //oocher #2
+      const firstTen = queueLine.slice(0, 10);
+      console.log(firstTen);
+
+      //reverse number
+      //   let inputToo = window.prompt("too bichne uu");
+      function reverse(data) {
+        return Number(data.split("").reverse().join(""));
+      }
+      //   console.log(reverse(inputToo));
+
+      //in the shopping cart
+
+      const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+      //add Meat in the beginning of the shopping cart
+      shoppingCart.unshift("Meat");
+      //add Meat in the end of the shopping cart
+      shoppingCart.push("Sugar");
+      //remove honey
+      shoppingCart.splice(4, 1);
+      shoppingCart.splice(3, 1, "Green tea");
+      console.log(shoppingCart);
+
+      //array-s element-g ustga
+
+      const arr = [1, 2, 3];
+      const n = 6;
+      function removeArrayElement(list, digitToRemove) {
+        const index = list.indexOf(digitToRemove);
+        list.splice(index, 1);
+      }
+      //   console.log(removeArrayElement(arr, n));
+
+      //car
+      carBrands = [
+        ["Aston Martin Lagonda Ltd", "UK", 2016],
+        ["Audi", "Germany", 2016],
+        ["BMW", "Germany", 2016],
+        ["Chevrolet", "USA", 2016],
+        ["Dodge", "USA", 2016],
+        ["Ferrari", "Italy", 2016],
+        ["Honda", "Japan", 2016],
+        ["Jaguar", "UK", 2016],
+        ["Lamborghini", "Italy", 2016],
+      ];
+      function searchByFirstDigit(brands, letter) {
+        const carNames = [];
+        for (let i = 0; i < brands.length; i++) {
+          carNames.push(brands[i][0]);
+        }
+        const result = [];
+        for (let i = 0; i < carNames.length; i++) {
+          if (carNames[i][0].toLowerCase() === letter.toLowerCase()) {
+            result.push(brands[i]);
+          }
+        }
+        return result;
+      }
+      //   const search = prompt("");
+      //   console.log(searchByFirstDigit(carBrands, search));
+
+      //simple 1
+      let faang = [
+        "Facebook",
+        "Google",
+        "Microsoft",
+        "Apple",
+        "IBM",
+        "Oracle",
+        "Amazon",
+      ];
+      // sort faang
+      faang.sort();
+      console.log(faang);
+      //reverse
+      faang.reverse();
+      console.log(faang);
+      // remove first company
+      faang.push();
+      //remove middle element
+      faang.splice(3, 1);
+      console.log(faang);
+      //pop
+      faang.pop();
+      console.log(faang);
+      //remove all
+      faang.splice(0, 5);
+      console.log(faang);
+
+      //parameterize
+      const str = "This is where I begin";
+      function parameterize(data) {
+        const str = data.split(" ");
+        return str.join("-").toLowerCase();
+      }
+      console.log(parameterize(str));
+    </script>
+  </body>
+</html>

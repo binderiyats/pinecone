@@ -1,0 +1,15 @@
+
+fieldset{
+    border-radius: 20px;
+    display: inline;
+    
+    
+}
+label{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+button{
+    right: 0;
+}

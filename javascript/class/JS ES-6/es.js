@@ -80,7 +80,7 @@ const deleteCar = (id) => {
         body: JSON.stringify({id})
     })
     .then((res) => res.json())
-    .catch((err)=> {
+    .then((res)=> {
         alert('Successfully Deleted!');
         getCarsHtml();
     });

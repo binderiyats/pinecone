@@ -19,7 +19,7 @@ function Tile({ x, y, isHead }) {
     height: tileHeight,
     backgroundColor: isHead ? headColor : bodyColor,
   };
-  return <div className="" style={style}></div>;
+  return <div style={style}></div>;
 }
 
 function App() {
@@ -35,6 +35,8 @@ function App() {
     { x: 0, y: 0 },
   ]);
 
+  const [food, setFood] = useState({ x: 5, y: 5 });
+
   const changeDirection = (movingDir) => {
     console.log(movingDir);
     const index = directions.findIndex((d) => d === movingDir);
@@ -47,15 +49,28 @@ function App() {
     }
   };
 
+  const foodPostion = () => {
+    const xPos = Math.floor(Math.random() * 10);
+    const yPos = Math.floor(Math.random() * 10);
+
+    const newFood = { x: xPos, y: yPos };
+
+    setFood(newFood);
+  };
+
   // console.log(direction);
 
   const moveRight = () => {
     let newSnake = [...snake];
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
-        if (item.x > xCells - snake.length + 1) {
+        if (item.x + 1 === food.x && item.y === food.y) {
+          foodPostion();
+        }
+        if (item.x === 9) {
           return { x: 0, y: item.y };
         }
+
         return { x: item.x + 1, y: item.y };
       }
       return { x: newSnake[index - 1].x, y: newSnake[index - 1].y };
@@ -67,10 +82,11 @@ function App() {
     let newSnake = [...snake];
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
-        if (item.x > xCells - snake.length + 1) {
+        if (item.x === 0) {
           return { x: xCells - 1, y: item.y };
         }
-        return { x: item.x + 1, y: item.y };
+
+        return { x: item.x - 1, y: item.y };
       }
       return { x: newSnake[index - 1].x, y: newSnake[index - 1].y };
     });
@@ -82,8 +98,9 @@ function App() {
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
         if (item.y === 0) {
-          return { x: item.x, y: yCells - 1 };
+          return { x: item.x, y: 9 };
         }
+
         return { x: item.x, y: item.y - 1 };
       }
       return { x: newSnake[index - 1].x, y: newSnake[index - 1].y };
@@ -95,7 +112,7 @@ function App() {
     let newSnake = [...snake];
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
-        if (item.y > yCells - snake.length + 1) {
+        if (item.y === 9) {
           return { x: item.x, y: 0 };
         }
         return { x: item.x, y: item.y + 1 };
@@ -113,19 +130,15 @@ function App() {
     switch (e.key) {
       case "ArrowDown":
         changeDirection("Down");
-
         break;
       case "ArrowUp":
         changeDirection("Up");
-
         break;
       case "ArrowRight":
         changeDirection("Right");
-
         break;
       case "ArrowLeft":
         changeDirection("Left");
-
         break;
       default:
         console.log("Non binary key");
@@ -146,12 +159,15 @@ function App() {
       case "Left":
         moveLeft();
         break;
+      default:
+        console.log("You lose");
     }
   }, [state]);
 
   setTimeout(() => {
     setState(state + 1);
   }, speed);
+
   return (
     <div className="wrapper" onKeyDown={handleKeyDown} tabIndex={0}>
       <h1>Snake game</h1>
@@ -170,7 +186,16 @@ function App() {
             />
           );
         })}
-        ;
+        <div
+          style={{
+            position: "absolute",
+            width: tileWidth,
+            height: tileHeight,
+            background: "yellow",
+            top: food.y * tileWidth,
+            left: food.x * tileHeight,
+          }}
+        ></div>
       </div>
     </div>
   );

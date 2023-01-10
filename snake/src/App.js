@@ -82,6 +82,9 @@ function App() {
     let newSnake = [...snake];
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
+        if(item.x - 1 === food.x && item.y === food.y){
+          foodPostion();
+        }
         if (item.x === 0) {
           return { x: xCells - 1, y: item.y };
         }
@@ -97,6 +100,9 @@ function App() {
     let newSnake = [...snake];
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
+        if(item.y - 1 === food.y && item.x === food.x){
+          foodPostion();
+        }
         if (item.y === 0) {
           return { x: item.x, y: 9 };
         }
@@ -112,6 +118,9 @@ function App() {
     let newSnake = [...snake];
     newSnake = newSnake.map((item, index) => {
       if (index === 0) {
+        if (item.y + 1 && item.x === food.x){
+          foodPostion();
+        }
         if (item.y === 9) {
           return { x: item.x, y: 0 };
         }

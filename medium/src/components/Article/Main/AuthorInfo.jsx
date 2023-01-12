@@ -1,8 +1,8 @@
-import authorpro from "../../IMGS/authorpro.png";
-import fb from "../../IMGS/socialIcons/fb.svg";
-import linkin from "../../IMGS/socialIcons/linkin.svg";
-import twitter from "../../IMGS/socialIcons/twitter.svg";
-import share from "../../IMGS/socialIcons/share.svg";
+import authorpro from "../../../IMGS/authorpro.png";
+import fb from "../../../IMGS/socialIcons/fb.svg";
+import linkin from "../../../IMGS/socialIcons/linkin.svg";
+import twitter from "../../../IMGS/socialIcons/twitter.svg";
+import share from "../../../IMGS/socialIcons/share.svg";
 
 export default function AuthorInfo() {
   return (

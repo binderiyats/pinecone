@@ -1,9 +1,9 @@
 import { useState } from "react";
-import LogoSmall from "../IMGS/LogoSmall.svg";
+import LogoSmall from "../../IMGS/LogoSmall.svg";
 import MainButton from "./MainButton";
 import SearchIcon from "./SearchIcon.jsx";
 import WriteIcons from "./WriteIcons";
-import profilePic from "../IMGS/propic.png";
+import profilePic from "../../IMGS/propic.png";
 
 export default function SlimNav() {
   const [showDropdown, setShowDropdown] = useState(false);

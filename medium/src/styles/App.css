@@ -80,3 +80,47 @@ slim-nav-link svg {
   color: #706e72;
   margin: 0 10px;
 }
+
+.news-title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #3e3d41;
+  margin-top: 20px;
+}
+
+.authorDesc {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #706e72;
+}
+
+.authorBtn1 {
+  background-color: #bb1a8e;
+  border: #bb1a8e;
+  color: #fff1ff;
+  border-radius: 1386px;
+  padding: 8px 17px 10px 18px;
+  font-size: 13px;
+}
+.authorBtn2 {
+  background-color: #bb1a8e;
+  border: #bb1a8e;
+  color: #fff1ff;
+  border-radius: 1386px;
+}
+.little-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #3e3d41;
+}
+
+.suggested-articles {
+  width: 70%;
+}
+.suggested-author {
+  font-size: 12px;
+  color: #3e3d41;
+}

@@ -8,14 +8,13 @@ function NavbarMenuItem({ item }) {
   );
 }
 
-export default function NavbarMenu({ items = [], title = "" }) {
+export default function NavbarMenu({ items = [], title = "", toggleOffMenu }) {
   return (
     <>
       <button
         className="navbar-toggler"
-        type="button"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        style={{ display: "block", marginRight: 20 }}
+        onClick={toggleOffMenu}
       >
         <span className="navbar-toggler-icon"></span>
       </button>

@@ -2,7 +2,7 @@ import NavbarMenu from "./Navbar/NavbarMenu";
 import NavbarDropDown from "./Navbar/NavbarDropdown";
 import NavbarWrapper from "./Navbar/NavbarWrapper";
 
-export default function Navbar() {
+export default function Navbar({ toggleOffMenu }) {
   const menuItems = [
     { label: "Home", link: "#" },
     { label: "News", link: "#" },
@@ -20,7 +20,11 @@ export default function Navbar() {
   ];
   return (
     <NavbarWrapper>
-      <NavbarMenu title="Admin" items={menuItems} />
+      <NavbarMenu
+        title="Admin"
+        items={menuItems}
+        toggleOffMenu={toggleOffMenu}
+      />
       <NavbarDropDown
         items={dropdownItems}
         picture="https://github.com/mdo.png"

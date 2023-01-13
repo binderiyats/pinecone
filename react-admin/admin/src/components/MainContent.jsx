@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function MainContent() {
   const [show, setShow] = useState(false);
-
+  const [menuShow, setMenuShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 

@@ -1,10 +1,10 @@
-import MainContentTitle from "./Maincontent/MainContentTitle";
-import MainContentTable from "./Maincontent/MainContentTable";
-import MainContentWrapper from "./Maincontent/MainContentWrapper";
-import DynamicModals from "./utilities/DynamicModals";
+import MainContentTitle from "../components/Maincontent/MainContentTitle";
+import MainContentTable from "../components/Maincontent/MainContentTable";
+import MainContentWrapper from "../components/Maincontent/MainContentWrapper";
+import DynamicModals from "../components/utilities/DynamicModals";
 import { useState } from "react";
 
-export default function MainContent() {
+export default function Articles() {
   const [show, setShow] = useState(false);
   const [menuShow, setMenuShow] = useState(false);
   const handleClose = () => setShow(false);

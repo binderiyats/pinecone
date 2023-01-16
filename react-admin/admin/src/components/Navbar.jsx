@@ -4,9 +4,9 @@ import NavbarWrapper from "./Navbar/NavbarWrapper";
 
 export default function Navbar({ toggleOffMenu }) {
   const menuItems = [
-    { label: "Home", link: "#" },
+    { label: "Home", link: "/" },
     { label: "News", link: "#" },
-    { label: "Articles", link: "#" },
+    { label: "Articles", link: "/articles" },
     { label: "Feedback", link: "#" },
     { label: "Files", link: "#" },
   ];

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Switch from "./utils/Switch.jsx";
@@ -6,7 +6,12 @@ import Switch from "./utils/Switch.jsx";
 export const ThemeContext = createContext("");
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <ThemeContext.Provider value={theme}>
       <div className={"wrapper " + theme}>

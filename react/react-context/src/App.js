@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Switch from "./utils/Switch.jsx";
